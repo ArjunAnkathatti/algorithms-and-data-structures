@@ -2,12 +2,25 @@ import java.util.Arrays;
 
 public class MergeSort {
 	public static void main(String[] args) {
-		int [] arr = {4, 3, 2, 1, 5};
-		
-		display(arr);
-		display(mergeSort(arr));
-		//display(arr);
-
+		if (args.length == 0) {
+			System.out.println("Please pass array as command line arguments");
+			System.out.println("Usage: java MergeSort 10 3 23 7");
+		} else {
+			int [] arrToSort = new int[args.length];
+			boolean isArrayValid = true;
+			for (int i=0; i<args.length; i++) {
+				try {
+					arrToSort[i] = Integer.parseInt(args[i]);	
+				} catch(NumberFormatException e) {
+					System.out.println("all the elements of the array should be of type integer");
+					isArrayValid = false;
+					break;
+				}
+				
+			}
+			if(isArrayValid)
+				display(mergeSort(arrToSort));
+		}
 		
 	}
 
@@ -23,11 +36,11 @@ public class MergeSort {
 	}
 
 	public static void display(int[] arr) {
-        	for(int num : arr) {
-                	System.out.print(num + ", ");
-              	}
+		for(int num : arr) {
+			System.out.print(num + ", ");
+		}
 		System.out.println("");
-   	}
+	}
 
 	public static int[] merge(int[] left, int[] right) {
 		int[] sortedArr = new int[left.length + right.length];
