@@ -1,7 +1,7 @@
 public class StringCompression {
 
 	public static void main(String[] args) {
-		String str = "abc";
+		String str = "abccccc";
 		System.out.println(compressString(str));
 	}
 
@@ -21,7 +21,7 @@ public class StringCompression {
 		}
 		comStr.append(letters[i]);
 		comStr.append(charCount);
-		if (str.length() == comStr.toString().length()) {
+		if (str.length() <= comStr.toString().length()) {
 			return str;
 		} else {
 			return comStr.toString();
