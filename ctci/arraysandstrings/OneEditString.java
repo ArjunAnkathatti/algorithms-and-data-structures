@@ -1,7 +1,7 @@
 public class OneEditString {
 	public static void main(String[] args) {
-		String str1 = "bale";
-		String str2 = "sbal";
+		String str1 = "pale";
+		String str2 = "bake";
 
 		System.out.println(areStringsOneEditAway(str1, str2));
 	}
