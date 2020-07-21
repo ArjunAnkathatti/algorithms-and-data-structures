@@ -6,3 +6,7 @@ You can use [Google Colab](https://colab.research.google.com/) to open my reposi
 [https://colab.research.google.com/](https://colab.research.google.com/)
 
 ![](https://github.com/ArjunAnkathatti/algorithms-and-data-structures/blob/master/images/Google_Colab.png)
+
+
+Credits: 
+Most of the solutions are from [LeetCode](https://leetcode.com/) and it's community.
