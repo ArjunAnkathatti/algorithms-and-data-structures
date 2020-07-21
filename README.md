@@ -1,2 +1,2 @@
-Python 2 solutions to Leetcode problems.
+Python 3 solutions to Leetcode problems.
 
