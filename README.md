@@ -1,2 +1,2 @@
-This repo contains all the challenges related to algorithms and data structures challenges
+Python 2 solutions to Leetcode problems.
 
